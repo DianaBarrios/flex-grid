@@ -1,0 +1,93 @@
+body {
+  background-color: pink;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+}
+
+.header {
+  background-color: white;
+  display: flex;
+  align-items: stretch;
+  height: 10vh;
+}
+
+.nav {
+  background-color: lightskyblue;
+  display: flex;
+  align-items: stretch;
+  margin-top: 5px;
+  height: 10vh;
+}
+
+.content {
+  background-color: white;
+  display: flex;
+  align-items: strech;
+  margin-top: 5px;
+  flex-grow: 4;
+  height: 40vh;
+  flex-wrap: wrap;
+}
+
+.nav-2 {
+  background-color: white;
+  align-self: strech;
+  flex-grow: 1;
+}
+
+.sections {
+  background-color: lightskyblue;
+  align-self: strech;
+  flex-grow: 2;
+}
+
+.section {
+  background-color: white;
+  margin: 5px;
+  display: flex;
+  align-items: strech;
+}
+
+.article {
+  background-color: aqua;
+  align-self: strech;
+  flex-grow: 2;
+  height: 30vh;
+  margin: 2px;
+}
+
+.aside-1,
+.aside-2 {
+  background-color: white;
+  align-self: strech;
+  flex-grow: 1;
+}
+
+.footer {
+  background-color: lightskyblue;
+  display: flex;
+  align-items: stretch;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 8vh;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-2 {
+    flex: 0 0 100%;
+  }
+  .section {
+    flex: 0 0 100%;
+  }
+
+  .aside-2 {
+    height: auto;
+    flex: 0 0 100%;
+  }
+}
